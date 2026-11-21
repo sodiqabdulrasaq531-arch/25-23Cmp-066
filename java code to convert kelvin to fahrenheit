@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class KelvinToFahrenheit {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter Kelvin: ");
+        double k = input.nextDouble();
+
+        if (k < 0) {
+            System.out.println("Invalid temperature");
+        } else {
+            double f = (k - 273.15) * 9.0 / 5.0 + 32;
+            System.out.println("Fahrenheit = " + f);
+        }
+    }
+}
