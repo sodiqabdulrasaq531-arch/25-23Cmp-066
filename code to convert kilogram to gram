@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class KilogramsToGrams {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter kilograms: ");
+        double kg = input.nextDouble();
+
+        if (kg < 0) {
+            System.out.println("Invalid weight");
+        } else {
+            double g = kg * 1000.0;
+            System.out.println("Grams = " + g);
+        }
+    }
+}
