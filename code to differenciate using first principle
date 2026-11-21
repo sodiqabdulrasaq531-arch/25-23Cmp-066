@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class FirstPrinciple {
+
+    public static double f(double x) {
+        return x * x;
+    }
+
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter the value of x: ");
+        double x = input.nextDouble();
+
+        double h = 0.000001;
+
+        double derivative = (f(x + h) - f(x)) / h;
+
+        System.out.println("Function: f(x) = x^2");
+        System.out.println("Derivative at x = " + x);
+        System.out.println("f'(x) = " + derivative);
+
+        input.close();
+    }
+}
